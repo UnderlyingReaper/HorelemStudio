@@ -1,28 +1,190 @@
-body {
-  background: #1f1f1f;
+* {
   margin: 0;
+  font-family: Roboto;
+}
+
+body {
+  background: #1a1a1a;
   height: 100%;
 }
 
 p, h1 {
-  font-family: Roboto;
   color: #f4f4f4;
 }
 
 header {
-  background: rgb(17, 17, 17);
+  background: rgb(20, 20, 20);
   width: 100%;
   height: 75px;
   padding: 0px 50px 0px 50px;
   display: flex;
   align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
 }
 
 
-/* ---------------------------------------------- */
+/* HEADER-------------------------------------------------------- */
 
 
-.header-name {
+.header-names-holder {
+  padding-right: 15px;
+  cursor: pointer;
+}
+.header-name1 {
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 0.15s;
+}
+.header-name2 {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 6px;
+  transition: all 0.15s;
+}
+.header-names-holder:hover .header-name1,.header-names-holder:hover .header-name2{
+  color: #EDAE49;
+}
+
+
+.header-button {
+  background: transparent;
+  color: #f4f4f4;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 20px 8px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.header-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.header-button .line {
+  position: relative;
+  background-color: transparent;
+  height: 2px;
+  top: 20px;
+  width: 100%;
+  transition: all 0.15s;
+}
+.header-button:hover .line {
+  background: #EDAE49;
+  top: 10px;
+}
+
+
+/* New Games----------------------------------------------------- */
+
+
+.new-game-holder {
+  width: 100%;
+  height: 100vh;
+}
+.new-game-holder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Images/Hellucinate.PNG');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.new-game-info {
+  padding-top: 250px;
+  padding-right: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.new-game-info .title {
+  width: 550px;
+}
+.new-game-info .info {
+  font-size: 20px;
+  font-weight: 700;
+}
+.new-game-info .VisitGame {
+  margin-top: 25px;
+  width: 225px;
+  height: 50px;
+  border: solid;
+  border-color: transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #f4f4f4;
   font-size: 15px;
+  background-color: rgba(11, 110, 79, 0.5);
+  transition: all 0.15s;
+}
+.new-game-info .VisitGame:hover {
+  background-color: rgba(11, 110, 79, 0.8);
+  border-color: rgba(11, 110, 79, 1);
+  width: 230px;
+  height: 51px;
+  box-shadow: 0px 1px 20px rgba(11, 110, 79, 0.5);
+}
+
+
+/* Games-------------------------------------------------------- */
+
+
+.games-section-holder {
+  padding-top: 125px;
+  padding-left: 75px;
+  padding-bottom: 100px;
+}
+
+.games-holder {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.game {
+  width: 300px;
+  height: 400px;
+  background: #222222;
+  border-radius: 8px;
+  border-style: none;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.game:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.game .icon {
+  width: 300px;
+  border-radius: 8px 8px 0px 0px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+.game .title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.game .price {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 3px 5px 3px 5px;
+  width: 50px;
+  color: #222222;
+  background-color: #AD2831;
+  border-radius: 8px;
+  transition: all 0.15s;
+}
+
+.game:hover .price {
+  box-shadow: 0px 0px 10px #AD2831;
 }

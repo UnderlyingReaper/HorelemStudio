@@ -1,22 +1,55 @@
 <html lang="en">
 
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="homepage.css">
 
-    <title>Homepage</title>
+    <title>HorelemStudio</title>
   </head>
 
   <body>
     <header>
-      <h1 class="header-name">HORELEM STUDIO</h1>
-      <button>ABOUT US</button>
-      <button>GAMES</button>
+      <div class="header-names-holder">
+        <p class="header-name1">HORELEM</p>
+        <p class="header-name2">STUDIO</p>
+      </div>
+      
+      <button class="header-button">HOME
+        <div class="line"></div>
+      </button>
+      <button class="header-button">ABOUT
+        <div class="line"></div>
+      </button>
+      <button class="header-button">GAMES
+        <div class="line"></div>
+      </button>
     </header>
 
+    <div class="new-game-holder">
+      <div class="new-game-info">
+        <img class="title" src="Images/HellucinateGameLogo.png">
+        <p class="info">Do you have what it takes to make it out alive?</p>
+        <button class="VisitGame">VISIT SITE</button>
+      </div>
+    </div>
+
+    <div class="games-section-holder">
+      <h1 style="font-size: 45px;">GAMES</h1>
+
+      <div class="games-holder">
+        <div class="game">
+          <img class="icon" src="GameIcons/Hellucinate_Icon.png">
+          <p class="title">Hellucinate</p>
+          <p class="price">FREE</p>
+        </div>
+      </div>
+    </div>
 
 
     <script src="homepage.js"/>
