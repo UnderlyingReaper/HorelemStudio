@@ -6,6 +6,10 @@ document.getElementById("LatestGameVisitBtn").onclick = OnHellucinateClick;
 
 document.getElementById("Hellucinate-Game").onclick = OnHellucinateClick;
 
+document.getElementById("X-Acc-Btn").onclick = OnXAccClick;
+document.getElementById("Instagram-Acc-Btn").onclick = OnInstagramAccClick;
+document.getElementById("Youtube-Channel-Btn").onclick = OnYoutubeChannelClick;
+
 
 
 function OnGamesClick()
@@ -24,4 +28,17 @@ function OnHomeClick()
 function OnHellucinateClick()
 {
   window.location.href = "https://horelemstudio.itch.io/hellucinate";
+}
+
+function OnXAccClick()
+{
+  window.location.href = "https://x.com/HorelemStudio";
+}
+function OnInstagramAccClick()
+{
+  window.location.href = "https://www.instagram.com/horelemstudio/";
+}
+function OnYoutubeChannelClick()
+{
+  window.location.href = "https://www.youtube.com/@HorelemStudio";
 }

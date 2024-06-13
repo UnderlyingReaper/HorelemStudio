@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 
 body {
@@ -199,9 +199,21 @@ footer {
   border-radius: 8px;
   transition: all 0.15s;
 }
-
 .game:hover .price {
   box-shadow: 0px 0px 10px #AD2831;
+}
+
+.game .info-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.game .platforms-holder i {
+  font-size: 20px;
+  color: rgba(244, 244, 244, 0.5);
+  margin: 2px;
 }
 
 
@@ -223,5 +235,62 @@ footer .follow-us-holder {
 }
 footer .social-media-icons {
   display: flex;
-  column-gap: 10px;
+  column-gap: 13px;
+}
+
+.social-media-icons .button {
+  background-color: #f4f4f4;
+  border-radius: 50px;
+  width: 35px;
+  overflow: hidden;
+  display: inline-block;
+  height: 35px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-media-icons .icon {
+  background-color: #f4f4f4;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-media-icons .button:hover {
+  width: 116px;
+}
+
+.social-media-icons .name {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.social-media-icons .button:hover .icon {
+  color: white;
+}
+
+.social-media-icons .button:nth-child(1):hover .icon {
+  background: #e1306c;
+}
+.social-media-icons .button:nth-child(1):hover p {
+  color: #e1306c;
+}
+
+.social-media-icons .button:nth-child(2):hover .icon {
+  background: #ff0000;
+}
+.social-media-icons .button:nth-child(2):hover p {
+  color: #ff0000;
+}
+
+.social-media-icons .button:nth-child(3):hover .icon {
+  background: #000000;
+}
+.social-media-icons .button:nth-child(3):hover p {
+  color: #000000;
 }
