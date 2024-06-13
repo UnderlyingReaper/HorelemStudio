@@ -1,6 +1,3 @@
-window.addEventListener('load', OnWebsiteLoad);
-
-
 document.getElementById("Games-Section").onclick = OnGamesClick;
 document.getElementById("About-Section").onclick = OnAboutClick;
 document.getElementById("Home-Section").onclick = OnHomeClick;
@@ -10,10 +7,6 @@ document.getElementById("LatestGameVisitBtn").onclick = OnHellucinateClick;
 document.getElementById("Hellucinate-Game").onclick = OnHellucinateClick;
 
 
-function OnWebsiteLoad()
-{
-  console.log("Website loaded");
-}
 
 function OnGamesClick()
 {
