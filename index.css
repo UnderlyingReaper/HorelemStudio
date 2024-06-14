@@ -1,7 +1,3 @@
-@media screen and (max-width: 600px) {
-}
-
-
 * {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -115,8 +111,8 @@ footer {
 }
 
 .new-game-info {
-  padding-top: 250px;
-  padding-right: 700px;
+  margin-top: 250px;
+  margin-right: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,4 +294,55 @@ footer .social-media-icons {
 }
 .social-media-icons .button:nth-child(3):hover p {
   color: #000000;
+}
+
+
+/* Media-Query ------------------------------------------------- */
+
+
+@media screen and (max-width: 1080px) {
+  header {
+    height: 150px;
+  }
+  .header-names-holder {
+    width: 200px;
+  }
+  .header-name1 {
+    font-size: 40px;
+  }
+  .header-name2 {
+    font-size: 30px;
+  }
+  .header-button {
+    font-size: 30px;
+  }
+
+
+  /* ------------------------------------------------- */
+
+
+  .new-game-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .new-game-info {
+    margin: 0;
+  }
+  .new-game-info .title {
+    width: 900px;
+  }
+  .new-game-info .info {
+    font-size: 30px;
+  }
+  .new-game-info .VisitGame {
+    margin-top: 50px;
+    transform: scale(1.8);
+  }
+
+
+  /* ------------------------------------------------- */
+
+
+  
 }

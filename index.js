@@ -18,7 +18,7 @@ function OnGamesClick()
 }
 function OnAboutClick()
 {
-  window.scrollTo({ top: 10000, behavior: 'smooth'});
+  window.scrollTo({ top: 10000000000000000, behavior: 'smooth'});
 }
 function OnHomeClick()
 {
