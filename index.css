@@ -310,9 +310,16 @@ footer .social-media-icons {
 @media screen and (max-width: 600px) {
   header {
     height: 150px;
+    justify-content: center;
+    padding: 0;
   }
   .header-names-holder {
     width: 200px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .header-name1 {
     font-size: 40px;
@@ -335,10 +342,10 @@ footer .social-media-icons {
     margin: 0;
   }
   .new-game-info .title {
-    width: 350px;
+    width: 325px;
   }
   .new-game-info .info {
-    font-size: 17px;
+    font-size: 15px;
   }
 
 
@@ -354,6 +361,7 @@ footer .social-media-icons {
   }
   .games-section-title {
     font-size: 50px;
+    text-align: center;
   }
   .game {
     transform: scale(1);
