@@ -23,6 +23,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 footer {
@@ -306,7 +307,7 @@ footer .social-media-icons {
 /* Media-Query ------------------------------------------------- */
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 600px) {
   header {
     height: 150px;
   }
@@ -320,7 +321,7 @@ footer .social-media-icons {
     font-size: 30px;
   }
   .header-button {
-    font-size: 30px;
+    display: none;
   }
 
 
@@ -334,14 +335,10 @@ footer .social-media-icons {
     margin: 0;
   }
   .new-game-info .title {
-    width: 900px;
+    width: 350px;
   }
   .new-game-info .info {
-    font-size: 30px;
-  }
-  .new-game-info .VisitGame {
-    margin-top: 50px;
-    transform: scale(1.8);
+    font-size: 17px;
   }
 
 
@@ -356,12 +353,10 @@ footer .social-media-icons {
     row-gap: 150px;
   }
   .games-section-title {
-    font-size: 100px;
+    font-size: 50px;
   }
   .game {
-    margin-top: 350px;
-    margin-bottom: 250px;
-    transform: scale(2.5);
+    transform: scale(1);
   }
 
 
@@ -369,10 +364,17 @@ footer .social-media-icons {
 
 
   footer {
-    height: 500px;
+    height: 400px;
+  }
+  .top-part {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px ;
   }
   footer .header-names-holder {
     width: 200px;
+    text-align: center;
   }
   footer .header-name1 {
     font-size: 40px;
@@ -381,16 +383,16 @@ footer .social-media-icons {
     font-size: 30px;
   }
   .top-part {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .top-part p {
-    font-size: 40px;
+    font-size: 15px;
   }
   .follow-us-holder h1 {
-    font-size: 75px;
+    font-size: 35px;
   }
   .social-media-icons {
-    margin-top: 40px;
-    transform: scale(2.5);
+    margin-top: 20px;
+    transform: scale(1.5);
   }
 }
