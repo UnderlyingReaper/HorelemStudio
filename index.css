@@ -90,6 +90,10 @@ footer {
   top: 10px;
 }
 
+header .hamburger {
+  display: none;
+}
+
 
 /* New Games----------------------------------------------------- */
 
@@ -323,8 +327,10 @@ footer .social-media-icons {
 @media screen and (max-width: 700px) {
   header {
     height: 90px;
-    justify-content: center;
-    padding: 0;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
   }
   .header-names-holder {
     padding: 0;
@@ -340,7 +346,32 @@ footer .social-media-icons {
     font-size: 15px;
   }
   .header-button {
-    display: none;
+    display: inline-block;
+  }
+
+  header .hamburger {
+    display: block;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 30px;
+    margin-right: 50px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .hamburger-buttons-holder {
+    position: fixed;
+    width: 100%;
+    background: #1a1a1a;
+    display: flex;
+    top: 90px;
+    right: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
   }
 
 

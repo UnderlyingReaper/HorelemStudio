@@ -1,3 +1,6 @@
+let isBurgerMenuOpen = false;
+document.getElementById("Hamburger-Btn").onclick = OnHamburgerClick;
+
 document.getElementById("Games-Section").onclick = OnGamesClick;
 document.getElementById("About-Section").onclick = OnAboutClick;
 document.getElementById("Home-Section").onclick = OnHomeClick;
@@ -11,7 +14,22 @@ document.getElementById("Instagram-Acc-Btn").onclick = OnInstagramAccClick;
 document.getElementById("Youtube-Channel-Btn").onclick = OnYoutubeChannelClick;
 
 
-
+function OnHamburgerClick()
+{
+  const burgerMenu = document.getElementById("Hamburger-Menu");
+  const burgerBtn = document.getElementById("Hamburger-Btn");
+  
+  if(!isBurgerMenuOpen) {
+    isBurgerMenuOpen = true;
+    burgerBtn.style.rotate = '90deg';
+    burgerMenu.style.right = '0%';
+  }
+  else if(isBurgerMenuOpen) {
+    isBurgerMenuOpen = false;
+    burgerBtn.style.rotate = '0deg';
+    burgerMenu.style.right = '100%';
+  }
+}
 function OnGamesClick()
 {
   window.scrollTo({ top: 625, behavior: 'smooth' });
